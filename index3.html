@@ -22,57 +22,87 @@
             margin-right: 15px;
         }
         .navbar-dark .navbar-nav .nav-link:not(.disabled):hover {
-            color: orange;
+            color: #007BFF;
         }
         .navbar-dark .navbar-toggler-icon {
-            background-color: orange;
+            background-color: #FF5733;
         }
         .btn-outline-warning {
             background: linear-gradient(135deg, #FFA07A, #FF5733);
-            border-color: orange;
+            border-color: #FF5733;
+        }
+        .breadcrumb {
+            background-color: transparent;
+        }
+        .breadcrumb-item a {
+            color: #FF5733;
+        }
+        .breadcrumb-item.active {
+            color: #FFA07A;
+        }
+        .jumbotron {
+            background: linear-gradient(135deg, #FF5733, #FFA07A, #007BFF);
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header class="container">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index2.html">FITBIT</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+                            <a class="nav-link" href="index2.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index3.html">About Us</a>
+                            <a class="nav-link" href="index3.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="index2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Blog
                             </a>
-                        </li>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://breakingmuscle.com/">Blog 1</a></li>
-                            <li><a class="dropdown-item" href="https://www.advancedhumanperformance.com/blog">Blog 2</a></li>
-                            <li><a class="dropdown-item" href="https://lindywell.com/blog/">Blog 3</a></li>
-                        </ul>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index3.html">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://breakingmuscle.com/">Blog 1</a></li>
+                                <li><a class="dropdown-item" href="https://www.advancedhumanperformance.com/blog">Blog 2</a></li>
+                                <li><a class="dropdown-item" href="https://lindywell.com/blog/">Blog 3</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index3.html">Contact Us</a>
+                            <a class="nav-link" href="index3.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index3.html">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index3.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Fitbit</h1>
+            <p class="lead">Achieve your fitness goals with our state-of-the-art products and expert guidance.</p>
+            <hr class="my-4">
+            <p>Explore our wide range of fitness products and start your journey to a healthier lifestyle.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+        </div>
+    </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
