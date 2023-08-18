@@ -28,3 +28,36 @@ function getBMICategory(bmi) {
         return "Obese";
     }
 }
+
+    function subscribeNewsletter() {
+        var email = document.getElementById("email").value;
+        alert("Thank you for subscribing to our newsletter, " + email + "!");
+        // You can send the email to a server for processing here
+    }
+
+    function submitContactForm() {
+        // Validate form fields and perform submission
+        // You can add your validation logic and submission code here
+        alert('Contact form submitted successfully!');
+    }
+
+    function login(){
+        alert('Logged in successfully!');
+    }
+
+    function signup(){
+        alert('Signup is successfull');
+    }
+
+    function LearnMore(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        if(para.style.display != 'none')
+        {
+            para.style.display= 'none';
+        }
+        else{
+            para.style.display= 'block';
+        }
+    }
