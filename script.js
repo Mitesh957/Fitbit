@@ -1,7 +1,6 @@
 function BMI() {
     const height = parseFloat(prompt("Enter your height in centimeters:"));
     const weight = parseFloat(prompt("Enter your weight in kilograms:"));
-
     if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
         alert("Please enter valid height and weight.");
         return;
